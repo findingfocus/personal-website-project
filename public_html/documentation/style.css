@@ -5,11 +5,17 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #314555;
+    margin-left: 3em;
+    margin-right: 3em;
 
 }
 /*background-image: url("sandias.png");*/
 .bg {
     background-color: rgba(0, 25, 80, 0.9);
+}
+
+p {
+    font-size: 1.3em;
 }
 img {
     display: block;
