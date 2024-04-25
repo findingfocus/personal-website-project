@@ -10,6 +10,9 @@ body {
 
 }
 /*background-image: url("sandias.png");*/
+a {
+    color:white;
+}
 .bg {
     background-color: rgba(0, 25, 80, 0.9);
 }
