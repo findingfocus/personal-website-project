@@ -5,9 +5,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #314555;
-    margin-left: 2em;
-    margin-right: 2em;
-    line-height: 2em;
+
+    font-family: "Heiti TC";
 }
 
 a {
@@ -32,4 +31,26 @@ img {
 
 h2 {
     margin-top: 1.5em;
+}
+
+section {
+    margin: 0rem 2rem;
+    line-height: 2rem;
+}
+
+@media only screen and (min-width: 640px) {
+    section {
+        margin: 0rem 4rem;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    section {
+        margin: 0rem 6em;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    section {
+        margin: 0rem 8rem;
+    }
 }
