@@ -50,6 +50,12 @@ section {
 
 @media only screen and (min-width: 1280px) {
     section {
-        margin: 0rem 8rem;
+        margin: 0rem 15rem;
+    }
+}
+
+@media only screen and (min-width: 1400) {
+    section {
+        margin: 0rem 20rem;
     }
 }
