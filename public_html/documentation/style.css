@@ -17,6 +17,7 @@ a {
 
 p {
     font-size: 1.3em;
+    margin-bottom: 0em;
 }
 
 img {
@@ -28,8 +29,18 @@ img {
     float: top;
  }
 
+.wireframe {
+   margin-top: 0em;
+   margin: 0em;
+   width: 100%;
+}
+
 h2 {
     margin-top: 1.5em;
+}
+
+h3 {
+    margin: 0;
 }
 
 section {
@@ -42,6 +53,7 @@ section {
         margin: 0rem 4rem;
     }
 }
+
 @media only screen and (min-width: 1024px) {
     section {
         margin: 0rem 6em;
