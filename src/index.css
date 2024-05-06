@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: black;
+    color: white;
+    /*background-image: linear-gradient(rgba(0, 15, 40, 1), rgba(0, 0, 10, 0.7)), url('sandias.png');*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #024498;
+    font-family: "Heiti TC";
+    font-size: 1.25rem;
+}
+
+img {
+    /*display: block;*/
+    /*width: 35%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-top: .5em;*/
+    /*float: right;*/
+}
