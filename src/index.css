@@ -2,15 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --paradise: #EF476F;
+    --green: #06D6A0;
+    --blue: #688AEB;
+    --powder: #FFEABA;
+}
 body {
-    background-color: black;
+    /*background-color: black;*/
     color: white;
-    /*background-image: linear-gradient(rgba(0, 15, 40, 1), rgba(0, 0, 10, 0.7)), url('sandias.png');*/
-    background-attachment: fixed;
-    background-size: cover;
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
     background-color: #024498;
     font-family: "Heiti TC";
     font-size: 1.25rem;
+    background: var(--powder)
+}
+
+.grid-container {
+    display: grid;
+    /*mobile stacking*/
+    /*grid-template-rows: 1fr 1fr;*/
+    /*grid-template-columns: 1fr 1fr;*/
+
+    /* desktop stacking*/
+    /*grid-template-rows: 1fr 1fr;*/
+    /*grid-template-columns: 1fr 1fr;*/
+    /*width: 360px*/
+}
+.wrapper {
+    /*display: flex;*/
+}
+.box {
+    /*padding: 3rem, 0rem;*/
+}
+
+.red {
+    background: var(--paradise);
+
+    /*mobile stacking*/
+    /*grid-column: span 1;*/
+}
+.blue {
+    background: var(--blue);
+
+    /* mobile stacking*/
+    /*grid-row: span 2;*/
+}
+.green {
+    background: var(--green);
+    /*mobile stacking*/
+    /*grid-column: span 1;*/
+
+    /* desktop stacking*/
+    /*grid-column: span 2;*/
 }
 
 img {
