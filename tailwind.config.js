@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        // 'sandias': "linear-gradient(rgba(0, 15, 40, 1), rgba(0, 0, 10, 0.7)), url('sandias.png')"
+        'sandias': "linear-gradient(rgba(0, 15, 40, 1), rgba(0, 0, 10, 0.7)), url('sandias.png')"
       }
     },
   },
