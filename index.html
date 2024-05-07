@@ -10,12 +10,43 @@
   <body class="bg-sandias">
 
   <!--- Header --->
-  <div class="mx-0 md:mx-40 grid-container grid-rows-2 grid-cols-3 pt-5">
+  <div class="mx-0 md:mx-40 grid-container grid-rows-2 grid-cols-3 pt-5 pb-2">
     <div class="mx-3 col-span-2 md:text-4xl lg:text-5xl text-3xl pl-3 flex items-center">Paul Thompson</div>
-    <div class="col-span-1 md:row-span-2 row-span-1"><img src="fflogo.png" alt="Finding Focus Logo" class="max-w-[22vw] h-auto md:order-3">
+    <div class="mx-3 col-span-1 md:row-span-2 row-span-1"><img src="fflogo.png" alt="Finding Focus Logo" class="max-w-[22vw] h-auto md:order-3">
     </div>
     <div class="mx-3 md:col-span-2 col-span-3 md:text-2xl text-xl lg:text-3xl pl-3 flex items-center">Software Engineer | Game developer</div>
   </div>
+
+  <!---Navbar--->
+  <nav class="px-2 py-1 mx:auto md:mr-14 md:ml-14 sm:ml-0 border border-solid border-gray-300 rounded-lg md:rounded-lg md:mt-3 bg-[#F8F8F8] text-[#575757]">
+    <div class="flex flex-wrap items-center justify-between mx-auto p-2">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <span class="self-center text-base font-light whitespace-nowrap dark:text-white">Title</span>
+      </a>
+      <button data-collapse-toggle="navbar" type="button" class="inline-flex items-center p-2 w-10 h-6 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar">
+        <ul class="flex flex-col font-light mt-4 rounded-lg bg-[#EEEEEE] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+          <li>
+            <a href="#" class="block py-2 px-3 md:p-0 text-[#575757] bg-gray-300 rounded md:bg-transparent md:text-[#575757]" aria-current="page">Link1</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 md:p-0 text-[#575757] hover:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-300">Link2</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 md:p-0 text-[#575757] hover:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-300">Link3</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 md:p-0 text-[#575757] hover:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-300">Link4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!---Body--->
   <div class="mx-auto md:ml-40">
