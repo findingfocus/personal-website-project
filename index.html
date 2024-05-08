@@ -8,6 +8,7 @@
     <link rel="icon" href="public/icons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/public/icons/iphone-icon.png">
     <link href="src/index.css" rel="stylesheet" type="text/css">
+    <!--- DONT FORGET TO ADD THE CENTURY GOTHIC FONT HERE--->
   </head>
   <!---/*class="bg-gradient-to-r from-cyan-500 to-blue-500"--->
   <body class="bg-sandias">
@@ -31,19 +32,19 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar">
         <ul class="flex flex-col font-light text-lg rounded-lg md:space-x-7 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 pl-4">
           <li>
-            <a href="#" class="flex justify-end block py-2 pt-0 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">About Me</a>
+            <a href="#aboutPage" class="flex justify-end block py-2 pt-0 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">About Me</a>
           </li>
           <li>
-            <a href="#" class="flex justify-end block py-2 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Weather</a>
+            <a href="#weatherPage" class="flex justify-end block py-2 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Weather</a>
           </li>
           <li>
-            <a href="#" class="flex justify-end block py-2 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Joust</a>
+            <a href="#joustPage" class="flex justify-end block py-2 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Joust</a>
           </li>
           <li>
-            <a href="#" class="flex justify-end block py-2 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Tashio Tempo</a>
+            <a href="#tashioPage" class="flex justify-end block py-2 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Tashio Tempo</a>
           </li>
           <li>
-            <a href="#" class="flex justify-end block py-2 pb-5 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Contact Me</a>
+            <a href="#contactPage" class="flex justify-end block py-2 pb-5 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Contact Me</a>
           </li>
         </ul>
       </div>
@@ -61,22 +62,22 @@
     <h1 class="text-2xl">PWP Outline:</h1>
     <p>My personal website project will be a one page portfolio, and will contain the following sections:</p>
     <br>
-    <h2><u>Header</u></h2>
+    <h2 id="aboutPage"><u>Header</u></h2>
     <p>The header will feature my name, skillset, and brand logo.</p>
     <br>
-    <h2><u>About Me</u></h2>
+    <h2 id="weatherPage"><u>About Me</u></h2>
     <p>In this section I will describe a bit about my passions and my personality, including my headshot. I will describe
       what languages I use, and the technologies I use to prototype interactive art ideas. I will describe that I am seeking
       to work with a team creating new products. I hope to convey that I am versatile in my programming skillset. I will include
       a sticky navbar to access any of the sections of my page from any other location.</p>
     <br>
-    <h2><u>Portfolio</u></h2>
+    <h2 id="joustPage"><u>Portfolio</u></h2>
     <p>This section will feature three playable game demos that are smaller versions of my bigger game projects already hosted on GitHub. I think interactive demos are a great way to easily share my work and catch people's attention right away. If they like the demo, they can easily view the source code on GitHub, or even download and play the full version from my GitHub releases on the repo. I want there to be a lightweight demo that users can click to play, and beneath it a dropdown box that will expand into a gif showing the fully featured game as well as a link to the source code and releases.</p>
     <br>
-    <h2><u>Contact Me</u></h2>
+    <h2 id="tashioPage"><u>Contact Me</u></h2>
     <p>In this section I want to thank people for spending time on my site, and invite them to add me on LinkedIn if they are interested in my work. I will also include a footer with easy to distinguish links for my GitHub, LinkedIn, website, and email. I think a sticky navbar on the bottom will be  an easy way for users to navigate to different sections with their thumbs, as well as keep my important links just one quick click away at all times.</p>
     <br>
-    <h2><u>Mockups:</u></h2>
+    <h2 id="contactPage"><u>Mockups:</u></h2>
     <div class="flex flex-col items-center">
       <p class="my-10">Desktop Wireframe</p>
       <img class="max-w-[60vw] " src="/public_html/documentation/desktop-mockup.png" alt="Desktop Mockup"><br><br>
