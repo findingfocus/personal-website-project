@@ -31,12 +31,13 @@
               <a href="#weatherPage" class="flex justify-end py-2 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Weather</a>
               <a href="#joustPage" class="flex justify-end py-2 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Joust</a>
               <a href="#tashioPage" class="flex justify-end py-2 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Tashio</a>
-              <a href="#contactPage" class="flex justify-end py-2 pb-5 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Contact Me</a>
+              <a href="#takPage" class="flex justify-end py-2 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Tak</a>
           </div>
-          <div class="hidden md:flex gap-2 items-center gap-5">
-            <a href="https://findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Visit Website"><img class="flex max-w-[32px]" src="public/icons/website-icon.png" alt="Visit Website"></a>
-            <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Linked-In Profile"><img class="flex max-w-[32px]" src="public/icons/linkedin-icon.png" alt="Linked-In Profile"></a>
-            <a href="https://www.github.com/findingfocus" target="_blank" rel="noopener noreferrer" title="Github Portfolio"><img class="max-w-[32px]" src="public/icons/github-icon.png" alt="Github Portfolio"></a>
+          <div class="items-center">
+            <a href="#contactPage" class="flex justify-end py-2 pb-4 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Contact me</a>
+<!--            <a href="https://findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Visit Website"><img class="flex max-w-[32px]" src="public/icons/website-icon.png" alt="Visit Website"></a>-->
+<!--            <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Linked-In Profile"><img class="flex max-w-[32px]" src="public/icons/linkedin-icon.png" alt="Linked-In Profile"></a>-->
+<!--            <a href="https://www.github.com/findingfocus" target="_blank" rel="noopener noreferrer" title="Github Portfolio"><img class="max-w-[32px]" src="public/icons/github-icon.png" alt="Github Portfolio"></a>-->
           </div>
         </ul>
       </div>
@@ -45,6 +46,7 @@
           <a href="https://findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Visit Website"><img class="flex max-w-[32px]" src="public/icons/website-icon.png" alt="Visit Website"></a>
           <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Linked-In Profile"><img class="flex max-w-[32px]" src="public/icons/linkedin-icon.png" alt="Linked-In Profile"></a>
           <a href="https://www.github.com/findingfocus" target="_blank" rel="noopener noreferrer" title="Github Portfolio"><img class="max-w-[32px]" src="public/icons/github-icon.png" alt="Github Portfolio"></a>
+          <a href="mailto:paul@findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Email me"><img class="flex max-w-[32px]" src="public/icons/email-icon.png" alt="Email me"></a>
         </div>
         <button data-collapse-toggle="navbar" type="button" class="inline-flex items-center p-2 w-10 h-6 justify-center text-sm text-white rounded-lg md:hidden hover:text-blue-100 focus:outline-none focus:ring-2 focus:ring-sky-100" aria-controls="navbar-solid-bg" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -57,7 +59,7 @@
   </nav>
 
   <!---Body--->
-  <div class="mx-4 md:mx-20 lg:mx-40 mt-4">
+  <div class="mx-4 md:mx-20 lg:mx-40 mt-4 pb-20">
     <!---
     <h1 class="text-2xl">PWP Outline:</h1>
     <p>My personal website project will be a one page portfolio, and will contain the following sections:</p>
@@ -75,6 +77,12 @@
     <br>
     <h2 id="weatherPage"><u>Weather</u></h2>
     <p>This is my submission to the 2022 OneLoneCoder Code Jam. Click below to play a small demo, or download the executable from the GitHub release page to play to full version with interactive sound effects!</p>
+    <br>
+    <p><b>Desktop Instructions:</b></p>
+    <p>Use "WASD" keys to fly in different directions.</p>
+    <br>
+    <p><b>Mobile Instructions:</b></p>
+    <p>Tap the very edges of the game's canvas to fly</p>
     <div class="-mx-4 flex justify-center">
       <canvas id="canvas1" width="500" height="500" style="max-width:100%; background:#000; vertical-align:middle; margin-top: 20px;"></canvas>
     </div>
@@ -126,12 +134,13 @@
       <a href="https://github.com/findingfocus/tashio.git" target="_blank" rel="noreferrer">
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-4 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-base shadow-inner">
           Download Executable
-          <!---&#8595;--->
+          <!---&#8595; &#8695;--->
+
         </button>
       </a>
     </div>
     <br>
-    <h2 id="contactPage"><u>Mockups:</u></h2>
+    <h2 id="takPage"><u>Mockups:</u></h2>
     <div class="flex flex-col items-center">
       <p class="my-10">Desktop Wireframe</p>
       <img class="max-w-[60vw] " src="/public_html/documentation/desktop-mockup.png" alt="Desktop Mockup"><br><br>
@@ -139,6 +148,16 @@
       <img class="max-w-[60vw]" src="/public_html/documentation/mobile-mockup.png" alt="Desktop Mockup">
     </div>
   </div>
+  <footer class="hidden md:block bg-gradient-to-b from-gray-800 to-gray-950 text-center fixed bottom-0 w-full py-4">
+    <div class="flex justify-between w-full items-center">
+      <div class="flex justify-center ml-4 gap-10 w-full items-center">
+        <a href="https://findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Visit Website"><img class="flex max-w-[32px]" src="public/icons/website-icon.png" alt="Visit Website"></a>
+        <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Linked-In Profile"><img class="flex max-w-[32px]" src="public/icons/linkedin-icon.png" alt="Linked-In Profile"></a>
+        <a href="https://www.github.com/findingfocus" target="_blank" rel="noopener noreferrer" title="Github Portfolio"><img class="max-w-[32px]" src="public/icons/github-icon.png" alt="Github Portfolio"></a>
+        <a href="mailto:paul@findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Email me"><img class="flex max-w-[32px]" src="public/icons/email-icon.png" alt="Email me"></a>
+      </div>
+    </div>
+  </footer>
   <script type="text/javascript" src="weather1.js"></script>
   <script type="module" src="/src/main.js"></script>
   </body>
