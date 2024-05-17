@@ -61,7 +61,7 @@
   </nav>
 
   <!---Body-->
-  <div class="mx-4 md:mx-20 lg:mx-40 xl:mx-60 2xl:mx-96 mt-4 pb-20">
+  <div class="mx-4 md:mx-20 lg:mx-40 xl:mx-60 2xl:mx-96 mt-4 pb-10">
     <!---About Me Section-->
     <h2 id="aboutPage"><u>About Me</u></h2>
     <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Paul's Linked-In Profile"><img src="/headshot-square.webp" alt="Paul Thompson" class="max-w-[9em] float-right border-4 hover:border-sky-900 border-blue-950 rounded-xl md:ml-3"></a>
@@ -78,11 +78,15 @@
     <h2 id="weatherPage"><u>Weather</u></h2>
     <p>This is my submission to the 2022 OneLoneCoder Code Jam. Click below to play a small demo, or download the executable from the GitHub release page to play to full version with interactive sound effects!</p>
     <br>
-    <p><b>Desktop Instructions:</b></p>
-    <p>Use the "WASD" keys to fly in different directions.</p>
-    <br>
-    <p><b>Mobile Instructions:</b></p>
-    <p>Tap the very edges of the game's canvas to fly</p>
+    <div class="flex justify-center">
+      <div>
+        <p><b>Desktop Instructions:</b></p>
+        <p>Use the "WASD" keys to fly in different directions.</p>
+        <br>
+        <p><b>Mobile Instructions:</b></p>
+        <p>Tap the very edges of the game's canvas to fly</p>
+      </div>
+    </div>
     <div class="-mx-4 flex justify-center">
       <canvas id="canvas1" width="500" height="500" style="max-width:100%; background:#000; vertical-align:middle; margin-top: 20px;"></canvas>
     </div>
@@ -182,7 +186,7 @@
 
     <!---Tak Section-->
     <h2 id="takPage"><u>Tak: A Beautiful Game</u></h2>
-    <p>Tashio Tempo is my new game inspired by Link's Awakening on GameBoy. It is a top-down pixel art game filled with adventure, magic, and music.</p>
+    <p>Tak is a board game from the novel "The Wise Man's Fear", created by James Ernest and Patrick Rothfuss. I programmed my own version of the game in Love2d and Lua. It is a competitive board game for two players, so grab a friend and let the game commence!</p>
     <div class="-mx-4">
       <img src="https://imgur.com/ER97sXz.gif" class="rounded mx-auto d-block" style="max-width: 100%; width: auto; height: auto; margin-top:20px;" alt="Tak Gameplay">
     </div>
@@ -212,16 +216,20 @@
         Source Code
       </button>
     </div>
-
-    <!---Contact Section-->
-    <h2 id="contactPage"><u>Contact me:</u></h2>
-    <p>Email me at <a href="mailto:paul@findingfocus.dev"><u class="hover:text-sky-300">paul@findingfocus.dev</u></a> for any business inquiries.</p>
-    <br>
-    <p>Connect with me on <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noreferrer"><u class="hover:text-sky-300">Linked-in</u></a> to stay in touch.</p>
-    <br>
-    <p>Visit my <a href="https://findingfocus.dev" target="_blank" rel="noreferrer"><u class="hover:text-sky-300">website</u></a> to see what else I'm working on</p>
   </div>
 
+  <!---Contact Section-->
+  <div id="contactPage" class="text-center bg-gradient-to-b from-transparent to-black w-full pb-24">
+    <div class="mx-4">
+      <p>Email me at <a href="mailto:paul@findingfocus.dev"><u class="hover:text-sky-300">paul@findingfocus.dev</u></a> for any business inquiries.</p>
+      <br>
+      <p>Visit my full <a href="https://findingfocus.dev" target="_blank" rel="noreferrer"><u class="hover:text-sky-300">website</u></a> to see what else I'm working on.</p>
+      <br>
+      <p>Connect with me on <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noreferrer"><u class="hover:text-sky-300">Linked-in</u></a> to stay in touch.</p>
+      <br>
+      <p>Thank you for your time!</p>
+    </div>
+  </div>
   <footer class="hidden md:block bg-gradient-to-b from-gray-800 to-gray-950 text-center fixed bottom-0 w-full py-2">
     <div class="flex justify-between w-full items-center">
       <div class="flex justify-center ml-4 gap-10 w-full items-center">
