@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
             if (window.innerWidth < 768) {
                 navbar.classList.add('hidden')
+                menuButton.click()
             }
         });
     });
