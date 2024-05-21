@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +11,14 @@
     <link href="src/index.css" rel="stylesheet" type="text/css">
     <!--- DONT FORGET TO ADD THE CENTURY GOTHIC FONT HERE-->
   </head>
+  <script src="navbarScript.js"></script>
   <body class="bg-sandias">
 
   <!--- Header -->
   <div class="mx-0 md:mx-20 lg:mx-40 xl:mx-60 2xl:mx-96 grid-container grid-rows-2 grid-cols-3 pt-5 pb-2">
     <div class="mx-2 col-span-2 md:text-4xl lg:text-5xl text-3xl pl-3 flex items-center">Paul Thompson</div>
     <div class="mx-2 col-span-1 md:row-span-2 row-span-1 flex items-center justify-evenly">
-      <img src="/logo.webp" alt="Finding Focus Logo" class="max-w-[22vw] lg:max-w-[20vw] 2xl:max-w-[18vw] h-auto md:order-3">
+      <img src="/logo.webp" alt="Finding Focus Logo" class="max-w-[20vw] lg:max-w-[20vw] 2xl:max-w-[18vw] h-auto md:order-3">
     </div>
     <div class="mx-2 md:col-span-2 col-span-3 md:text-2xl text-xl lg:text-3xl pl-3 flex items-center">Software Engineer | Game developer</div>
   </div>
@@ -27,14 +28,14 @@
       <div class="hidden w-auto md:block md:w-full" id="navbar">
         <div class="flex flex-col font-light text-lg rounded-lg md:space-x-7  rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 pl-4">
           <div class="flex flex-col mr-0 md:mr-auto md:flex-row md:space-x-7 rtl:space-x-reverse md:items-center items-right text-[#FFFFFF]">
-              <a href="#aboutPage" class="flex justify-end py-2 pt-0 px-3 md:p-0 hover:text-sky-300">About Me</a>
-              <a href="#weatherPage" class="flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Weather</a>
-              <a href="#joustPage" class="flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Joust</a>
-              <a href="#tashioPage" class="flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Tashio</a>
-              <a href="#takPage" class="flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Tak</a>
+              <a href="#" class="navbar-link flex justify-end py-2 pt-0 px-3 md:p-0 hover:text-sky-300">About Me</a>
+              <a href="#weatherPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Weather</a>
+              <a href="#joustPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Joust</a>
+              <a href="#tashioPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Tashio</a>
+              <a href="#takPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Tak</a>
           </div>
           <div class="items-center">
-            <a href="#contactPage" class="flex justify-end py-2 pb-4 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Contact me</a>
+            <a href="#contactPage" class="navbar-link flex justify-end py-2 pb-4 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Contact me</a>
             <!---icons nested in navbar for desktop
             <a href="https://findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Visit Website"><img class="flex max-w-[32px]" src="/icons/website-icon.png" alt="Visit Website"></a>
             <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Linked-In Profile"><img class="flex max-w-[32px]" src="/icons/linkedin-icon.png" alt="Linked-In Profile"></a>
@@ -50,7 +51,7 @@
           <a href="https://www.github.com/findingfocus" target="_blank" rel="noopener noreferrer" title="Github Portfolio"><img class="max-w-[32px]" src="/icons/github-icon.png" alt="Github Portfolio"></a>
 <!--          <a href="mailto:paul@findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Email me"><img class="flex max-w-[32px]" src="/icons/email-icon.png" alt="Email me"></a>-->
         </div>
-        <button data-collapse-toggle="navbar" type="button" class="inline-flex items-center p-2 w-10 h-6 justify-center text-sm text-white rounded-lg md:hidden hover:text-blue-100 focus:outline-none focus:ring-2 focus:ring-sky-100" aria-expanded="false">
+        <button id="menu-button" data-collapse-toggle="navbar" type="button" class="inline-flex items-center p-2 w-10 h-6 justify-center text-sm text-white rounded-lg md:hidden hover:text-blue-100 focus:outline-none focus:ring-2 focus:ring-sky-100" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -90,7 +91,7 @@
     <div class="-mx-4 flex justify-center">
       <canvas id="canvas1" width="500" height="500" style="max-width:100%; background:#000; vertical-align:middle; margin-top: 20px;"></canvas>
     </div>
-    <div class="flex justify-center -mx-0">
+    <div class="flex justify-center -mx-4">
       <div class="flex flex-row justify-evenly pt-8 pb-6 w-[28em]">
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-2 md:px-4 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/weather/releases/download/v1.0/Weather_win32-v1.0.zip', '_blank', 'noreferrer')"
@@ -243,6 +244,7 @@
       </div>
     </div>
   </footer>
+
   <script src="weather1.js"></script>
   <script src="joust.js"></script>
   <script type="module" src="/src/main.js"></script>
