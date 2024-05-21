@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close navbar when a link is clicked
     navbarLinks.forEach(function(link) {
         link.addEventListener('click', function() {
-            if (window.innerWidth < 768) {  // Check if screen size is less than 768px (mobile)
+            if (window.innerWidth < 768) {
                 navbar.classList.add('hidden')
             }
         });
