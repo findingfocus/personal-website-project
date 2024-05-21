@@ -9,9 +9,7 @@
     <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icons/iphone-icon.png">
     <link href="src/index.css" rel="stylesheet" type="text/css">
-    <!--- DONT FORGET TO ADD THE CENTURY GOTHIC FONT HERE-->
   </head>
-  <script src="navbarScript.js"></script>
   <body class="bg-sandias">
 
   <!--- Header -->
@@ -28,11 +26,11 @@
       <div class="hidden w-auto md:block md:w-full" id="navbar">
         <div class="flex flex-col font-light text-lg rounded-lg md:space-x-7  rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 pl-4">
           <div class="flex flex-col mr-0 md:mr-auto md:flex-row md:space-x-7 rtl:space-x-reverse md:items-center items-right text-[#FFFFFF]">
-              <a href="#" class="navbar-link flex justify-end py-2 pt-0 px-3 md:p-0 hover:text-sky-300">About Me</a>
-              <a href="#weatherPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Weather</a>
-              <a href="#joustPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Joust</a>
-              <a href="#tashioPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Tashio</a>
-              <a href="#takPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Tak</a>
+            <a href="#" class="navbar-link flex justify-end py-2 pt-0 px-3 md:p-0 hover:text-sky-300">About Me</a>
+            <a href="#joustPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Joust</a>
+            <a href="#weatherPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Weather</a>
+            <a href="#tashioPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Tashio</a>
+            <a href="#takPage" class="navbar-link flex justify-end py-2 px-3 md:p-0 hover:text-sky-300">Tak</a>
           </div>
           <div class="items-center">
             <a href="#contactPage" class="navbar-link flex justify-end -translate-x-1.5 py-2 pb-4 px-3 md:p-0 text-[#FFFFFF] hover:text-sky-300">Contact me</a>
@@ -62,7 +60,10 @@
   </nav>
 
   <!---Body-->
-  <div class="mx-4 md:mx-20 lg:mx-40 xl:mx-60 2xl:mx-96 mt-4 pb-10">
+  <div class="mx-4 md:mx-20 lg:mx-40 xl:mx-60 2xl:mx-96 mt-0 md:mt-8 pb-10">
+    <div class="-mx-4 flex justify-center pb-6">
+      <canvas id="canvas2" width="500" height="120" style="max-width:100%; background:#000; vertical-align:middle;"></canvas>
+    </div>
     <!---About Me Section-->
     <h2 id="aboutPage"><u>About Me</u></h2>
     <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Paul's Linked-In Profile"><img src="/headshot-square.webp" alt="Paul Thompson" class="max-w-[9em] float-right border-4 hover:border-sky-900 border-blue-950 rounded-xl md:ml-3"></a>
@@ -74,6 +75,42 @@
       <p>I am analytical, professional, and highly motivated to learn and integrate with a team focused on a digital engineering ecosystem.</p>
     </div>
     <br>
+
+    <!---Joust Section-->
+    <h2 id="joustPage"><u>Joust</u></h2>
+    <p>My remake of the 1982 Williams Electronics game, Joust. Built in <a href="https://love2d.org" target="_blank" rel="noopener noreferrer">Love2d</a> with <a href="https://www.lua.org/" target="_blank" rel="noopener noreferrer">Lua</a>. My version comes with 25 waves of enemies, a two-player mode, and a leaderboard!</p>
+    <div class="-mx-4">
+      <img src="https://imgur.com/ECFQqHP.gif" class="rounded mx-auto d-block" style="max-width: 100%; width: auto; height: auto; margin-top:20px;" alt="Joust Gameplay">
+    </div>
+    <!--    <div class="-mx-4 flex justify-center">-->
+    <!--      <canvas id="canvas2" width="500" height="120" style="max-width:100%; background:#000; vertical-align:middle;"></canvas>-->
+    <!--    </div>-->
+    <div class="flex justify-center -mx-4">
+      <div class="flex flex-row justify-evenly pt-8 pb-6 w-[28em]">
+        <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-2 md:px-4 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
+                onclick="window.open('https://github.com/findingfocus/joust/releases/download/v1.1/Joust_win32-v1.1.zip', '_blank', 'noreferrer')"
+                title="Joust_win32-v1.1.zip">
+          Download <img class="inline max-w-[1em] -translate-y-0.5" src="/icons/windows-icon.png" alt="Joust Windows Executable Download" title="Joust Windows Executable Download">
+        </button>
+        <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
+                onclick="window.open('https://github.com/findingfocus/joust/releases/download/v1.1/Joust_osx-v1.1.zip', '_blank', 'noreferrer')"
+                title="Joust_osx-v1.1.zip">
+          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/apple-icon.png" alt="Joust MacOS Executable Download" title="Joust MacOS Executable Download">
+        </button>
+        <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
+                onclick="window.open('https://github.com/findingfocus/joust/releases/download/v1.1/Joust_linux-v1.1.tar.gz', '_blank', 'noreferrer')"
+                title="Joust_linux-v1.1.tar.gz">
+          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/linux-icon.png" alt="Joust Linux Executable Download" title="Joust Linux Executable Download">
+        </button>
+      </div>
+    </div>
+    <div class="flex justify-center -translate-x-1 pb-8">
+      <button class="bg-[#238636] hover:bg-[#258f39] text-white py-2 px-3 md:px-4 border border-green-600 hover:border-green-500 hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
+              onclick="window.open('https://github.com/findingfocus/joust.git', '_blank', 'noreferrer')"
+              title="https://github.com/findingfocus/joust.git">
+        Source Code
+      </button>
+    </div>
 
     <!---Weather Page-->
     <h2 id="weatherPage"><u>Weather</u></h2>
@@ -119,45 +156,11 @@
     </div>
     <br>
 
-    <!---Joust Section-->
-    <h2 id="joustPage"><u>Joust</u></h2>
-    <p>My remake of the 1982 Williams Electronics game, Joust. Built in LÖVE2d with Lua. Use 'a' to move left, and 'd' to move right.</p>
-    <div class="-mx-4">
-      <img src="https://imgur.com/ECFQqHP.gif" class="rounded mx-auto d-block" style="max-width: 100%; width: auto; height: auto; margin-top:20px;" alt="Joust Gameplay">
-    </div>
-    <div class="-mx-4 flex justify-center">
-      <canvas id="canvas2" width="500" height="120" style="max-width:100%; background:#000; vertical-align:middle; margin-top:0px;"></canvas>
-    </div>
-    <div class="flex justify-center -mx-4">
-      <div class="flex flex-row justify-evenly pt-8 pb-6 w-[28em]">
-        <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-2 md:px-4 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
-                onclick="window.open('https://github.com/findingfocus/joust/releases/download/v1.1/Joust_win32-v1.1.zip', '_blank', 'noreferrer')"
-                title="Joust_win32-v1.1.zip">
-          Download <img class="inline max-w-[1em] -translate-y-0.5" src="/icons/windows-icon.png" alt="Joust Windows Executable Download" title="Joust Windows Executable Download">
-        </button>
-        <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
-                onclick="window.open('https://github.com/findingfocus/joust/releases/download/v1.1/Joust_osx-v1.1.zip', '_blank', 'noreferrer')"
-                title="Joust_osx-v1.1.zip">
-          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/apple-icon.png" alt="Joust MacOS Executable Download" title="Joust MacOS Executable Download">
-        </button>
-        <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
-                onclick="window.open('https://github.com/findingfocus/joust/releases/download/v1.1/Joust_linux-v1.1.tar.gz', '_blank', 'noreferrer')"
-                title="Joust_linux-v1.1.tar.gz">
-          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/linux-icon.png" alt="Joust Linux Executable Download" title="Joust Linux Executable Download">
-        </button>
-      </div>
-    </div>
-    <div class="flex justify-center -translate-x-1 pb-8">
-      <button class="bg-[#238636] hover:bg-[#258f39] text-white py-2 px-3 md:px-4 border border-green-600 hover:border-green-500 hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
-              onclick="window.open('https://github.com/findingfocus/joust.git', '_blank', 'noreferrer')"
-              title="https://github.com/findingfocus/joust.git">
-        Source Code
-      </button>
-    </div>
+
 
     <!---Tashio Section-->
     <h2 id="tashioPage"><u>Tashio Tempo</u></h2>
-    <p>Tashio Tempo is my new game inspired by Link's Awakening on GameBoy. It is a top-down pixel art game filled with adventure, magic, and music.</p>
+    <p>Tashio Tempo is my new game inspired by Link's Awakening on Game Boy. It is a top-down pixel art game filled with adventure, magic, and music. I made a current release of the game for people to try, there are gecko entities and spell casting with 100 screens to explore.</p>
     <div class="-mx-4">
       <img src="/icons/tashio.webp" class="rounded mx-auto d-block max-h-[440px]" style="width:auto;height: auto; margin-top:20px;" alt="Tak Gameplay">
     </div>
@@ -223,13 +226,18 @@
   </div>
 
   <!---Contact Section-->
-  <div id="contactPage" class="text-center bg-gradient-to-b from-transparent to-black w-full pb-24">
+  <div class="text-center bg-gradient-to-b from-transparent to-black w-full pb-24">
+    <h2 class="pb-6" id="contactPage"><u>Contact Me</u></h2>
     <div class="mx-4">
       <p>Email me at <a href="mailto:paul@findingfocus.dev"><u class="hover:text-sky-300">paul@findingfocus.dev</u></a> for any business inquiries.</p>
       <br>
       <p>Visit my full <a href="https://findingfocus.dev" target="_blank" rel="noreferrer"><u class="hover:text-sky-300">website</u></a> to see what else I'm working on.</p>
       <br>
       <p>Connect with me on <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noreferrer"><u class="hover:text-sky-300">Linked-in</u></a> to stay in touch.</p>
+      <br>
+      <p>Watch my development streams on <a href="https://twitch.tv/findingfocusdev" target="_blank" rel="noreferrer"><u class="hover:text-sky-300">Twitch</u></a>.</p>
+      <br>
+      <p>View my devlogs on <a href="https://youtube.com/findingfocus" target="_blank" rel="noreferrer"><u class="hover:text-sky-300">Youtube</u></a>.</p>
       <br>
       <p>Thank you for your time!</p>
     </div>
@@ -244,7 +252,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="navbarScript.js"></script>
   <script src="weather1.js"></script>
   <script src="joust.js"></script>
   <script type="module" src="/src/main.js"></script>

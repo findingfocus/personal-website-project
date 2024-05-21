@@ -13,7 +13,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #002554;
-    font-family: "Heiti TC";
+    font-family: "Heiti TC", sans-serif;
     font-size: 1.25rem;
     /*background: vads`-powder)*/
 }
