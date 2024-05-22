@@ -57,7 +57,7 @@
     {
       if (canvas.disabled) return;
       canvas.disabled = true;
-      // canvas.scrollIntoView();
+      canvas.scrollIntoView();
       DoLoad();
     };
     ctx.fillStyle = '#004';
