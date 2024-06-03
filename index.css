@@ -8,14 +8,15 @@
     --blue: #688AEB;
     --powder: #FFEABA;
 }
+
 body {
     color: white;
     background-attachment: fixed;
     background-size: cover;
     background-color: #001126;
+    background-image: linear-gradient(rgba(0, 15, 40, 1), rgba(0, 0, 10, 0.7)), url('./sandias.webp');
     font-family: "Heiti TC", sans-serif;
     font-size: 1.25rem;
-    /*background: vads`-powder)*/
 }
 
 .grid-container {

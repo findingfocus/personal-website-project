@@ -7,7 +7,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'sandias': "linear-gradient(rgba(0, 15, 40, 1), rgba(0, 0, 10, 0.7)), url('/sandias.webp')"
+        'sandias': "linear-gradient(rgba(0, 15, 40, 1), rgba(0, 0, 10, 0.7)), url('./sandias.webp')"
       }
     },
   },

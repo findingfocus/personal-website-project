@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Paul Thompson's Personal Website Project and development portfolio">
     <title>Paul Thompson: Portfolio</title>
-    <link rel="icon" href="/icons/favicon.png" sizes="32x32">
-    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icons/iphone-icon.png">
-    <link href="src/index.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="./icons/favicon.png" sizes="32x32">
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./icons/iphone-icon.png">
+    <link href="./index.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-sandias">
 
@@ -16,7 +18,7 @@
   <div class="mx-0 md:mx-20 lg:mx-40 xl:mx-60 2xl:mx-96 grid-container grid-rows-2 grid-cols-3 pt-5 pb-2">
     <div class="mx-2 col-span-2 md:text-4xl lg:text-5xl text-3xl pl-3 flex items-center">Paul Thompson</div>
     <div class="mx-2 col-span-1 md:row-span-2 row-span-1 flex items-center justify-evenly">
-      <img src="/logo.webp" alt="Finding Focus Logo" class="max-w-[20vw] lg:max-w-[20vw] 2xl:max-w-[18vw] h-auto md:order-3">
+      <img src="./logo.webp" alt="Finding Focus Logo" class="max-w-[20vw] lg:max-w-[20vw] 2xl:max-w-[18vw] h-auto md:order-3">
     </div>
     <div class="mx-2 md:col-span-2 col-span-3 md:text-2xl text-xl lg:text-3xl pl-3 flex items-center">Software Engineer | Game developer</div>
   </div>
@@ -39,9 +41,9 @@
       </div>
       <div class="flex justify-between w-full md:hidden items-center">
         <div class="flex justify-center gap-10 w-full md:hidden items-center">
-          <a href="https://findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Visit Website"><img class="flex max-w-[32px]" src="/icons/website-icon.png" alt="Visit Website"></a>
-          <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Linked-In Profile"><img class="flex max-w-[32px]" src="/icons/linkedin-icon.png" alt="Linked-In Profile"></a>
-          <a href="https://www.github.com/findingfocus" target="_blank" rel="noopener noreferrer" title="Github Portfolio"><img class="max-w-[32px]" src="/icons/github-icon.png" alt="Github Portfolio"></a>
+          <a href="https://findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Visit Website"><img class="flex max-w-[32px]" src="./icons/website-icon.png" alt="Visit Website"></a>
+          <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Linked-In Profile"><img class="flex max-w-[32px]" src="./icons/linkedin-icon.png" alt="Linked-In Profile"></a>
+          <a href="https://www.github.com/findingfocus" target="_blank" rel="noopener noreferrer" title="Github Portfolio"><img class="max-w-[32px]" src="./icons/github-icon.png" alt="Github Portfolio"></a>
         </div>
         <button id="menu-button" data-collapse-toggle="navbar" type="button" class="inline-flex items-center p-2 w-10 h-6 justify-center text-sm text-white rounded-lg md:hidden hover:text-blue-100 focus:outline-none focus:ring-2 focus:ring-sky-100" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
@@ -61,7 +63,7 @@
 
     <!---About Me Section-->
     <h2 id="aboutPage"><u>About Me</u></h2>
-    <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Paul's Linked-In Profile"><img src="/headshot-square.webp" alt="Paul Thompson" class="max-w-[9em] float-right border-4 hover:border-sky-900 border-blue-950 rounded-xl md:ml-3"></a>
+    <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Paul's Linked-In Profile"><img src="./headshot-square.webp" alt="Paul Thompson" class="max-w-[9em] float-right border-4 hover:border-sky-900 border-blue-950 rounded-xl md:ml-3"></a>
     <div>
       <p>My name is Paul Thompson, I am an artist interested in developing software solutions and interactive experiences. I own a small video production company in Albuquerque, New Mexico, and my recent studies have led to a deepening skill set that now includes Full Stack Web Development and computer science.</p>
       <br>
@@ -77,8 +79,8 @@
     <div class="-mx-4">
       <div class="flex justify-center items-center mt-8">
         <video class="max-w-full max-h-full" playsinline autoplay muted loop>
-          <source src="/video/joust.webm" type="video/webm">
-          <source src="/video/joust.mp4" type="video/mp4">
+          <source src="./video/joust.webm" type="video/webm">
+          <source src="./video/joust.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -88,17 +90,17 @@
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-2 md:px-4 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/joust/releases/download/v1.1/Joust_win32-v1.1.zip', '_blank', 'noreferrer')"
                 title="Joust_win32-v1.1.zip">
-          Download <img class="inline max-w-[1em] -translate-y-0.5" src="/icons/windows-icon.png" alt="Joust Windows Executable Download" title="Joust Windows Executable Download">
+          Download <img class="inline max-w-[1em] -translate-y-0.5" src="./icons/windows-icon.png" alt="Joust Windows Executable Download" title="Joust Windows Executable Download">
         </button>
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/joust/releases/download/v1.1/Joust_osx-v1.1.zip', '_blank', 'noreferrer')"
                 title="Joust_osx-v1.1.zip">
-          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/apple-icon.png" alt="Joust MacOS Executable Download" title="Joust MacOS Executable Download">
+          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="./icons/apple-icon.png" alt="Joust MacOS Executable Download" title="Joust MacOS Executable Download">
         </button>
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/joust/releases/download/v1.1/Joust_linux-v1.1.tar.gz', '_blank', 'noreferrer')"
                 title="Joust_linux-v1.1.tar.gz">
-          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/linux-icon.png" alt="Joust Linux Executable Download" title="Joust Linux Executable Download">
+          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="./icons/linux-icon.png" alt="Joust Linux Executable Download" title="Joust Linux Executable Download">
         </button>
       </div>
     </div>
@@ -131,17 +133,17 @@
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-2 md:px-4 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/weather/releases/download/v1.0/Weather_win32-v1.0.zip', '_blank', 'noreferrer')"
                 title='Weather_win32-v1.0.zip'>
-          Download <img class="inline max-w-[1em] -translate-y-0.5" src="/icons/windows-icon.png" alt="Weather Windows Executable Download" title="Weather MacOS Executable Download">
+          Download <img class="inline max-w-[1em] -translate-y-0.5" src="./icons/windows-icon.png" alt="Weather Windows Executable Download" title="Weather MacOS Executable Download">
         </button>
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/weather/releases/download/v1.0/Weather_osx-v1.0.zip', '_blank', 'noreferrer')"
                 title="Weather_osx-v1.0.zip">
-          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/apple-icon.png" alt="Weather MacOS Executable Download" title="Weather Windows Executable Download">
+          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="./icons/apple-icon.png" alt="Weather MacOS Executable Download" title="Weather Windows Executable Download">
         </button>
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/weather/releases/download/v1.0/Weather_linux-v1.0.tar.gz', '_blank', 'noreferrer')"
                 title="Weather_linux-v1.0.tar.gz">
-          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/linux-icon.png" alt="Weather Linux Executable Download" title="Weather Linux Executable Download">
+          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="./icons/linux-icon.png" alt="Weather Linux Executable Download" title="Weather Linux Executable Download">
         </button>
       </div>
     </div>
@@ -159,8 +161,8 @@
     <div class="-mx-4">
       <div class="flex justify-center items-center pt-8">
         <video class="max-w-full max-h-full" playsinline autoplay muted loop>
-          <source src="/video/tashio.webm" type="video/webm">
-          <source src="/video/tashio.mp4" type="video/mp4">
+          <source src="./video/tashio.webm" type="video/webm">
+          <source src="./video/tashio.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -170,17 +172,17 @@
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-2 md:px-4 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/tashio/releases/download/v1.0/Tashio_win32-v1.0.zip', '_blank', 'noreferrer')"
                 title="Tashio_win32-v1.0.zip">
-          Download <img class="inline max-w-[1em] -translate-y-0.5" src="/icons/windows-icon.png" alt="Tashio Windows Executable Download" title="Tashio Windows Executable Download">
+          Download <img class="inline max-w-[1em] -translate-y-0.5" src="./icons/windows-icon.png" alt="Tashio Windows Executable Download" title="Tashio Windows Executable Download">
         </button>
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/tashio/releases/download/v1.0/Tashio_osx-v1.0.zip', '_blank', 'noreferrer')"
                 title="Tashio_osx-v1.0.zip">
-          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/apple-icon.png" alt="Tashio MacOS Executable Download" title="Tashio MacOS Executable Download">
+          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="./icons/apple-icon.png" alt="Tashio MacOS Executable Download" title="Tashio MacOS Executable Download">
         </button>
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/tashio/releases/download/v1.0/Tashio_linux-v1.0.tar.gz', '_blank', 'noreferrer')"
                 title="Tashio_linux-v1.0.tar.gz">
-          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/linux-icon.png" alt="Tashio Linux Executable Download" title="Tashio Linux Executable Download">
+          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="./icons/linux-icon.png" alt="Tashio Linux Executable Download" title="Tashio Linux Executable Download">
         </button>
       </div>
     </div>
@@ -198,8 +200,8 @@
     <div class="-mx-4">
       <div class="flex justify-center items-center mt-8">
         <video class="max-w-full max-h-full" playsinline autoplay muted loop>
-          <source src="/video/tak.webm" type="video/webm">
-          <source src="/video/tak.mp4" type="video/mp4">
+          <source src="./video/tak.webm" type="video/webm">
+          <source src="./video/tak.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -209,17 +211,17 @@
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-2 md:px-4 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/tak/releases/download/v1.0/Tak_win32-v1.0.zip', '_blank', 'noreferrer')"
                 title="Tak_win32-v1.0.zip">
-          Download <img class="inline max-w-[1em] -translate-y-0.5" src="/icons/windows-icon.png" alt="Tak Windows Executable Download" title="Tak Windows Executable Download">
+          Download <img class="inline max-w-[1em] -translate-y-0.5" src="./icons/windows-icon.png" alt="Tak Windows Executable Download" title="Tak Windows Executable Download">
         </button>
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/tak/releases/download/v1.0/Tak_osx-v1.0.zip', '_blank', 'noreferrer')"
                 title="Tak_osx-v1.0.zip">
-          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/apple-icon.png" alt="Tak MacOS Executable Download" title="Tak MacOS Executable Download">
+          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="./icons/apple-icon.png" alt="Tak MacOS Executable Download" title="Tak MacOS Executable Download">
         </button>
         <button class="bg-[#235586] hover:bg-[#265c91] text-white text-md py-2 px-3 md:px-2 border border-[#1b4e80] hover:border-[#2369ad] hover:shadow-md rounded-2xl font-mono font-lighter text-sm md:text-base shadow-inner"
                 onclick="window.open('https://github.com/findingfocus/tak/releases/download/v1.0/Tak_linux-v1.0.tar.gz', '_blank', 'noreferrer')"
                 title="Tak_linux-v1.0.tar.gz">
-          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="/icons/linux-icon.png" alt="Tak Linux Executable Download" title="Tak Linux Executable Download">
+          Download <img class="inline max-w-[1em] -translate-x-0.5 -translate-y-0.5 z-0" src="./icons/linux-icon.png" alt="Tak Linux Executable Download" title="Tak Linux Executable Download">
         </button>
       </div>
     </div>
@@ -251,15 +253,15 @@
   <footer class="hidden md:block bg-gradient-to-b from-gray-800 to-gray-950 text-center fixed bottom-0 w-full py-2">
     <div class="flex justify-between w-full items-center">
       <div class="flex justify-center ml-4 gap-10 w-full items-center">
-        <a href="https://findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Visit Website"><img class="flex max-w-[32px]" src="/icons/website-icon.png" alt="Visit Website"></a>
-        <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Linked-In Profile"><img class="flex max-w-[32px]" src="/icons/linkedin-icon.png" alt="Linked-In Profile"></a>
-        <a href="https://www.github.com/findingfocus" target="_blank" rel="noopener noreferrer" title="Github Portfolio"><img class="max-w-[32px]" src="/icons/github-icon.png" alt="Github Portfolio"></a>
+        <a href="https://findingfocus.dev" target="_blank" rel="noopener noreferrer" title="Visit Website"><img class="flex max-w-[32px]" src="./icons/website-icon.png" alt="Visit Website"></a>
+        <a href="https://www.linkedin.com/in/findingfocusdev/" target="_blank" rel="noopener noreferrer" title="Linked-In Profile"><img class="flex max-w-[32px]" src="./icons/linkedin-icon.png" alt="Linked-In Profile"></a>
+        <a href="https://www.github.com/findingfocus" target="_blank" rel="noopener noreferrer" title="Github Portfolio"><img class="max-w-[32px]" src="./icons/github-icon.png" alt="Github Portfolio"></a>
       </div>
     </div>
   </footer>
   <script src="navbarScript.js"></script>
   <script src="weather.js"></script>
   <script src="joust.js"></script>
-  <script type="module" src="/src/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   </body>
 </html>
